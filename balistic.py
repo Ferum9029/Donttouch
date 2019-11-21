@@ -14,18 +14,18 @@ def control(screen, GUN1, gun1, GUN2, gun2, xf, yf, ww, hh, h, color, jj, txt1, 
             elif e.type == pygame.KEYDOWN:
                 if xf == gun1[0]:
                     if e.key == pygame.K_LEFT or e.key == pygame.K_a:
-                        velocity[1] -= 30
-                        velocity[0] -= 30
+                        velocity[1] -= 10
+                        velocity[0] -= 10
                     elif e.key == pygame.K_RIGHT or e.key == pygame.K_d:
-                        velocity[1] += 30
-                        velocity[0] += 30
+                        velocity[1] += 10
+                        velocity[0] += 10
                 elif xf == gun2[0]:
                     if e.key == pygame.K_RIGHT or e.key == pygame.K_d:
-                        velocity[1] -= 30
-                        velocity[0] += 30
+                        velocity[1] -= 10
+                        velocity[0] += 10
                     elif e.key == pygame.K_LEFT or e.key == pygame.K_a:
-                        velocity[1] += 30
-                        velocity[0] -= 30
+                        velocity[1] += 10
+                        velocity[0] -= 10
                 if e.key == pygame.K_RETURN or e.key == pygame.K_SPACE:
                     return rect[0], rect[1], jj
             elif e.type == pygame.KEYUP:
@@ -45,9 +45,10 @@ def control(screen, GUN1, gun1, GUN2, gun2, xf, yf, ww, hh, h, color, jj, txt1, 
         screen.blit(txt1, (0, 0))
         screen.blit(txt2, (1200, 0))
         pygame.display.update()
+        print(rect)
 
-
-
+# rect(710, -717, 2000, 5) red
+# rect(516, -597, 2000, 5) blue
 def bullet(A, screen, velocity, y, ground, GUN1, gun1, GUN2, gun2, jj, enemy, color, xf, yf, ww, hh, u, mountain, txt1, txt2):
     clock = pygame.time.Clock()
     FPS= 199
