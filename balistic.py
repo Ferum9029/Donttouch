@@ -67,7 +67,7 @@ def bullet(A, screen, velocity, y, ground, GUN1, gun1, GUN2, gun2, jj, enemy, co
         if ground.colliderect(A) or mountain.colliderect(A) or A[0] > 1366 or A[0] < 0:
             running = False
             print('gg')
-        if enemy.collidepoint(A[0], A[1]):
+        if enemy.colliderect(A):
             return -1
         print(A)
 
