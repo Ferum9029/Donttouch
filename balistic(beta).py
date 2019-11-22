@@ -141,7 +141,7 @@ def menu(mode):
                    screen.blit(level4, (1330, 215))
                    pygame.display.update()
                elif botrect2.collidepoint(event.pos) and mode == 4:
-                   pygame.draw.rect(screen, (77, 97, 167), (1252, 175, 78, 26))
+                   pygame.draw.rect(screen, (77, 97, 167), (1250, 173, 200, 30))
                    botrect2 = pygame.draw.rect(screen, (0, 0, 0), (1330, 175, 26, 26), 3)
                    pygame.draw.lines(screen, (0, 0, 0), False, [[1330, 188], [1343, 201], [1356, 175]], 4)
                    botrect3 = pygame.draw.rect(screen, (0, 0, 0), (1304, 175, 26, 26), 3)
@@ -150,7 +150,7 @@ def menu(mode):
                    h = 4
                    pygame.display.update()
                elif botrect3.collidepoint(event.pos) and mode == 4:
-                   pygame.draw.rect(screen, (77, 97, 167), (1252, 175, 78, 26))
+                   pygame.draw.rect(screen, (77, 97, 167), (1250, 173, 200, 30))
                    botrect2 = pygame.draw.rect(screen, (0, 0, 0), (1330, 175, 26, 26), 3)
                    botrect3 = pygame.draw.rect(screen, (0, 0, 0), (1304, 175, 26, 26), 3)
                    pygame.draw.lines(screen, (0, 0, 0), False, [[1304, 188], [1317, 201], [1330, 175]], 4)
@@ -159,7 +159,7 @@ def menu(mode):
                    h = 3
                    pygame.display.update()
                elif botrect4.collidepoint(event.pos) and mode == 4:
-                   pygame.draw.rect(screen, (77, 97, 167), (1252, 175, 78, 26))
+                   pygame.draw.rect(screen, (77, 97, 167), (1250, 173, 200, 30))
                    botrect2 = pygame.draw.rect(screen, (0, 0, 0), (1330, 175, 26, 26), 3)
                    botrect3 = pygame.draw.rect(screen, (0, 0, 0), (1304, 175, 26, 26), 3)
                    botrect4 = pygame.draw.rect(screen, (0, 0, 0), (1278, 175, 26, 26), 3)
@@ -168,7 +168,7 @@ def menu(mode):
                    h = 2
                    pygame.display.update()
                elif botrect5.collidepoint(event.pos) and mode == 4:
-                   pygame.draw.rect(screen, (77, 97, 167), (1252, 175, 78, 26))
+                   pygame.draw.rect(screen, (77, 97, 167), (1250, 173, 200, 30))
                    botrect2 = pygame.draw.rect(screen, (0, 0, 0), (1330, 175, 26, 26), 3)
                    botrect3 = pygame.draw.rect(screen, (0, 0, 0), (1304, 175, 26, 26), 3)
                    botrect4 = pygame.draw.rect(screen, (0, 0, 0), (1278, 175, 26, 26), 3)
@@ -1699,4 +1699,6 @@ def gameduelsq():
             gameover(2)
         elif hp2 == 0:
             gameover(1)
+
+
 mode = menu(mode)
