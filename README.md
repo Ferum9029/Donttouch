@@ -1,5 +1,5 @@
 # Donttouch
-There is only code without a menu, or something like. 'ff.py' is the main file 
+There is only code without a menu, or something like. 'balistic.py' is the main file 
 TransForce
 A/D and LEFT/RIGHT are buttons to 'aim'
 Press shift to make your gun's speed faster
